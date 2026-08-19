@@ -1,6 +1,6 @@
 # Formulary Intelligence Dashboard
 
-React + JavaScript dashboard for the Pharmacy Formulary Optimization and Adherence Assistant MVP v2.3.
+React + JavaScript dashboard for the Pharmacy Formulary Optimization and Adherence Assistant MVP v2.3
 
 ## Run locally
 
