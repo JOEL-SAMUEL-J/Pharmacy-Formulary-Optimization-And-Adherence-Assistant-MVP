@@ -209,9 +209,7 @@ Use `.env.example` as the canonical safe template. Store deployed secrets in you
 - There is no governed therapeutic-equivalence mapping, so the application does not recommend substitute medications.
 - A fully populated MVP v2.3 database is required for the complete dashboard experience.
 
-## Contributing and security
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the development workflow and [`SECURITY.md`](SECURITY.md) for responsible vulnerability reporting and healthcare-data precautions.
 
 ## License
 
