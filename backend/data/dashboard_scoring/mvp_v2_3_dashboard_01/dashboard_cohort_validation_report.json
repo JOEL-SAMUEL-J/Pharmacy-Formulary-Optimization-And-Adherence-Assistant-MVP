@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "designation": "separate synthetic dashboard scoring cohort",
+  "generation_version": "mvp_v2.3-dashboard-01",
+  "seed": 2318,
+  "rows": 3000,
+  "base_profiles": 1000,
+  "plans": 3,
+  "plan_counts": {
+    "S4802|138|000": 1000,
+    "S5884|217|000": 1000,
+    "S5921|382|000": 1000
+  },
+  "hidden_audit_target_counts": {
+    "0": 1500,
+    "1": 1500
+  },
+  "hidden_audit_plan_balance": {
+    "S4802|138|000": {
+      "count": 1000.0,
+      "sum": 500.0,
+      "mean": 0.5
+    },
+    "S5884|217|000": {
+      "count": 1000.0,
+      "sum": 500.0,
+      "mean": 0.5
+    },
+    "S5921|382|000": {
+      "count": 1000.0,
+      "sum": 500.0,
+      "mean": 0.5
+    }
+  },
+  "standardized_mean_shift_vs_training": {
+    "age": 0.008924655721895056,
+    "chronic_condition_count": 0.0,
+    "medication_count": 0.0,
+    "historical_member_pdc": 0.024977905299836945,
+    "historical_missed_fill_rate": 0.05205535592473627,
+    "historical_mean_delay_days": 0.08095769479333433,
+    "mean_tier_level": 3.024095773119432e-14,
+    "prior_authorization_rate": 3.277758532574336e-14,
+    "step_therapy_rate": 4.9638760980277947e-14,
+    "quantity_limit_rate": 2.6476707201727177e-14,
+    "nonpreferred_pharmacy_rate": 5.125944431621084e-14,
+    "mean_synthetic_cost_burden": 0.0069713101914033555
+  },
+  "reference_transfer_check": {
+    "purpose": "reference transfer/separability check only; not selected artifact performance",
+    "threshold": 0.5,
+    "accuracy": 0.8516666666666667,
+    "balanced_accuracy": 0.8516666666666667,
+    "tn": 1253,
+    "fp": 247,
+    "fn": 198,
+    "tp": 1302,
+    "meets_80_percent_reference_check": true
+  },
+  "checks": {
+    "rows_3000": true,
+    "profiles_1000": true,
+    "plans_3": true,
+    "1000_rows_per_plan": true,
+    "matched_three_plans": true,
+    "unique_members": true,
+    "unique_profile_plan": true,
+    "no_training_member_id_overlap": true,
+    "no_training_profile_id_overlap": true,
+    "scoring_has_no_label": true,
+    "scoring_has_no_future_pdc": true,
+    "exact_overall_balance_in_audit": true,
+    "exact_plan_balance_in_audit": true,
+    "feature_values_complete": true,
+    "feature_contract_exact": true,
+    "medication_rows_5343": true,
+    "medication_member_fk": true,
+    "medication_features_reconciled": true,
+    "distribution_shift_small": true,
+    "reference_accuracy_at_least_80": true
+  },
+  "files": {
+    "dashboard_scoring_features_mvp_v2_3.csv": {
+      "rows": 3000,
+      "sha256": "3f04e84071cb0bc13d83e3402b8c1a3dce1b4a71ac82826babb945a78727c573"
+    },
+    "dashboard_cohort_audit_mvp_v2_3.csv": {
+      "rows": 3000,
+      "sha256": "cd3a09cfb91d0aca3f33e8aa8c3ba8c031ad69636ba64a9c1bf11c1c73a5c683"
+    },
+    "dashboard_member_medications_mvp_v2_3.csv": {
+      "rows": 5343,
+      "sha256": "6824b707d75274f225e48517075f0195423a7ccb3235df9f2a1667e039170cb9"
+    }
+  },
+  "limitations": [
+    "This is synthetic POC data, not external or real-world validation.",
+    "The cohort is distribution-matched to the v2.3 synthetic development data.",
+    "The reference transfer result is not a claim about the selected saved model.",
+    "Only the leakage-safe scoring file may be supplied to the model."
+  ]
+}

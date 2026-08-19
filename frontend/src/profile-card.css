@@ -1,0 +1,167 @@
+/* Prescriber profile summary banner. */
+.profile-card {
+  position: relative;
+  isolation: isolate;
+  min-height: 194px;
+  padding: 28px 30px !important;
+  border: 1px solid #ffffff17;
+  background:
+    radial-gradient(circle at 83% -25%, #55c4a936 0 26%, transparent 27%),
+    linear-gradient(118deg, #102b4d 0%, #174b61 52%, #1b6b67 100%) !important;
+  box-shadow: 0 16px 34px #123f5130;
+}
+
+.profile-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -48px;
+  bottom: -78px;
+  width: 230px;
+  height: 150px;
+  border: 26px solid #ffffff08;
+  border-radius: 50%;
+  transform: rotate(-12deg);
+}
+
+.profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 270px;
+}
+
+.profile-avatar {
+  display: grid;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid #ffffff24;
+  border-radius: 16px;
+  background: #ffffff12;
+  color: #74e6c8;
+  box-shadow: inset 0 1px #ffffff18;
+}
+
+.profile-card .eyebrow {
+  color: #73e5c7 !important;
+  font-size: 9px !important;
+  letter-spacing: .15em;
+}
+
+.profile-card h2 {
+  margin: 7px 0 8px !important;
+  font-size: 24px !important;
+  letter-spacing: -.035em;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.profile-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  border: 1px solid #ffffff13;
+  border-radius: 7px;
+  background: #ffffff0d;
+  color: #d6e8eb;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.profile-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(122px, 1fr));
+  gap: 12px !important;
+}
+
+.profile-stats > span {
+  min-width: 122px;
+  min-height: 118px;
+  padding: 17px 16px;
+  border: 1px solid #ffffff16;
+  border-radius: 13px;
+  background: #ffffff0e;
+  text-align: left !important;
+  box-shadow: inset 0 1px #ffffff0d;
+}
+
+.profile-stats i,
+.profile-stats small {
+  display: block;
+  color: #b9d7da;
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: .04em;
+}
+
+.profile-stats i {
+  text-transform: uppercase;
+  font-weight: 750;
+}
+
+.profile-stats strong {
+  margin: 7px 0 3px;
+  font-size: 27px !important;
+  letter-spacing: -.035em;
+}
+
+.profile-stats small {
+  color: #8fb9bd;
+  white-space: nowrap;
+}
+
+.prescriber-results {
+  position: relative;
+}
+
+.prescriber-results.rows-updating::after {
+  content: "Updating results";
+  position: absolute;
+  z-index: 4;
+  top: 10px;
+  right: 14px;
+  padding: 6px 10px 6px 24px;
+  border: 1px solid #d7e6e1;
+  border-radius: 999px;
+  background: #f3faf7;
+  color: #347361;
+  box-shadow: 0 5px 14px #193d3214;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.prescriber-results.rows-updating::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 17px;
+  right: 83px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid #9bc8bb;
+  border-top-color: #267d65;
+  border-radius: 50%;
+  animation: profile-results-spin .7s linear infinite;
+}
+
+@keyframes profile-results-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 1200px) {
+  .profile-card { align-items: stretch !important; }
+  .profile-stats { width: 100%; }
+}
+
+@media (max-width: 680px) {
+  .profile-card { padding: 20px !important; }
+  .profile-identity { min-width: 0; }
+  .profile-stats { grid-template-columns: repeat(2, 1fr); }
+  .profile-stats > span { min-width: 0; }
+}

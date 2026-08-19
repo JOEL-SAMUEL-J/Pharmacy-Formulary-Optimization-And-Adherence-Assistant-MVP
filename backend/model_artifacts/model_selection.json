@@ -1,0 +1,85 @@
+{
+  "primary_model_a_selected": {
+    "model": "logistic_regression",
+    "best_params": {
+      "model__C": 1.0,
+      "model__class_weight": null
+    },
+    "best_cv_average_precision": 0.9005736618087697,
+    "oof_development_metrics": {
+      "accuracy": 0.8029166666666666,
+      "balanced_accuracy": 0.8029166666666667,
+      "precision_non_adherent": 0.7686622320768662,
+      "recall_non_adherent": 0.8666666666666667,
+      "f1": 0.8147277712495103,
+      "roc_auc": 0.8954993055555556,
+      "average_precision": 0.8990264104867135,
+      "brier_score": 0.13211047391764594,
+      "tn": 887,
+      "fp": 313,
+      "fn": 160,
+      "tp": 1040,
+      "threshold": 0.4049999999999999
+    },
+    "test_metrics": {
+      "accuracy": 0.85,
+      "balanced_accuracy": 0.8500000000000001,
+      "precision_non_adherent": 0.8,
+      "recall_non_adherent": 0.9333333333333333,
+      "f1": 0.8615384615384616,
+      "roc_auc": 0.9383666666666668,
+      "average_precision": 0.9421660070217812,
+      "brier_score": 0.10274000948819241,
+      "tn": 230,
+      "fp": 70,
+      "fn": 20,
+      "tp": 280,
+      "threshold": 0.4049999999999999
+    },
+    "selected_threshold": 0.4049999999999999
+  },
+  "primary_model_a_reason": "Logistic Regression selected because its grouped development CV average precision is within approximately one percentage point of the best candidate and it is simpler to explain.",
+  "model_b_selected": {
+    "model": "logistic_regression",
+    "best_params": {
+      "model__C": 0.01,
+      "model__class_weight": null
+    },
+    "best_cv_average_precision": 0.9002865190799849,
+    "oof_development_metrics": {
+      "accuracy": 0.79875,
+      "balanced_accuracy": 0.79875,
+      "precision_non_adherent": 0.7599709934735316,
+      "recall_non_adherent": 0.8733333333333333,
+      "f1": 0.8127181077937184,
+      "roc_auc": 0.8958541666666667,
+      "average_precision": 0.8992134006091098,
+      "brier_score": 0.13314030974385657,
+      "tn": 869,
+      "fp": 331,
+      "fn": 152,
+      "tp": 1048,
+      "threshold": 0.42499999999999993
+    },
+    "test_metrics": {
+      "accuracy": 0.85,
+      "balanced_accuracy": 0.8500000000000001,
+      "precision_non_adherent": 0.8,
+      "recall_non_adherent": 0.9333333333333333,
+      "f1": 0.8615384615384616,
+      "roc_auc": 0.938711111111111,
+      "average_precision": 0.9428656074101142,
+      "brier_score": 0.10942737912351042,
+      "tn": 230,
+      "fp": 70,
+      "fn": 20,
+      "tp": 280,
+      "threshold": 0.42499999999999993
+    },
+    "selected_threshold": 0.42499999999999993
+  },
+  "model_b_reason": "Logistic Regression selected because its grouped development CV average precision is within approximately one percentage point of the best candidate and it is simpler to explain.",
+  "poc_accuracy_criterion": 0.8,
+  "warning": "The >=80% accuracy criterion is a POC acceptance criterion, not permission to tune against the test set.",
+  "performance_label": "performance on enhanced synthetic POC data"
+}

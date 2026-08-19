@@ -1,0 +1,79 @@
+/* Elevated analytical chart treatment. */
+.real-chart {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px !important;
+  background: linear-gradient(145deg, #fff 70%, #f7faf9 135%);
+  box-shadow: 0 9px 26px #23384d0c !important;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.real-chart:hover {
+  transform: translateY(-2px);
+  border-color: #d7e3df !important;
+  box-shadow: 0 16px 34px #23384d16 !important;
+}
+
+.real-chart header {
+  position: relative;
+  z-index: 2;
+  padding: 21px 22px 6px !important;
+}
+
+.real-chart header > svg {
+  box-sizing: content-box;
+  padding: 7px;
+  border: 1px solid #e2ebe8;
+  border-radius: 9px;
+  background: #f3f8f6;
+  color: #378b73 !important;
+}
+
+.real-chart h3 {
+  font-size: 14px !important;
+}
+
+.chart-canvas {
+  height: 225px !important;
+  padding: 6px 16px 0 !important;
+}
+
+.chart-tooltip {
+  border: 1px solid #ffffff17;
+  border-radius: 12px !important;
+  background: linear-gradient(145deg, #15263d, #1e3f4b) !important;
+  box-shadow: 0 16px 35px #15263d38 !important;
+}
+
+.chart-legend > div {
+  padding: 4px 6px;
+  border-radius: 7px;
+}
+
+.chart-legend > div:hover {
+  background: #f2f7f5;
+}
+
+.donut-center strong {
+  font-size: 25px !important;
+  letter-spacing: -.04em;
+}
+
+.exposure-panel {
+  border-radius: 18px !important;
+  background: linear-gradient(145deg, #fff 65%, #f4f1ff 145%);
+  box-shadow: 0 9px 26px #23384d0c !important;
+}
+
+.exposure-panel .meter > div {
+  height: 7px;
+}
+
+.exposure-panel .meter i {
+  background: linear-gradient(90deg, #8b78e8, #5f52ca);
+}
+
+@media (max-width: 560px) {
+  .chart-canvas { height: 205px !important; }
+  .real-chart:hover { transform: none; }
+}

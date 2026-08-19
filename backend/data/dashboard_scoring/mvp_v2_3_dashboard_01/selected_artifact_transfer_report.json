@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "purpose": "selected saved artifact transfer verification",
+  "rows": 3000,
+  "threshold": 0.4049999999999999,
+  "flagged_count": 1730,
+  "accuracy": 0.8406666666666667,
+  "balanced_accuracy": 0.8406666666666667,
+  "tn": 1146,
+  "fp": 354,
+  "fn": 124,
+  "tp": 1376,
+  "per_plan": {
+    "S4802|138|000": {
+      "rows": 1000,
+      "flagged_count": 546,
+      "accuracy": 0.85,
+      "balanced_accuracy": 0.8500000000000001,
+      "tn": 402,
+      "fp": 98,
+      "fn": 52,
+      "tp": 448
+    },
+    "S5884|217|000": {
+      "rows": 1000,
+      "flagged_count": 619,
+      "accuracy": 0.829,
+      "balanced_accuracy": 0.829,
+      "tn": 355,
+      "fp": 145,
+      "fn": 26,
+      "tp": 474
+    },
+    "S5921|382|000": {
+      "rows": 1000,
+      "flagged_count": 565,
+      "accuracy": 0.843,
+      "balanced_accuracy": 0.843,
+      "tn": 389,
+      "fp": 111,
+      "fn": 46,
+      "tp": 454
+    }
+  }
+}

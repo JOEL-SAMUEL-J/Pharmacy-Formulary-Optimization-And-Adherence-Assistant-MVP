@@ -1,0 +1,238 @@
+/* Refined data-table surfaces and compact, branded scrollbars. */
+.table-panel {
+  overflow: hidden;
+  padding: 0 10px 10px;
+}
+
+.table-panel > header {
+  padding: 22px 14px 8px !important;
+}
+
+.table-wrap {
+  padding: 4px 8px 10px !important;
+  scrollbar-color: #66978b transparent;
+  scrollbar-width: thin;
+}
+
+.table-wrap table {
+  border-collapse: separate !important;
+  border-spacing: 0 7px !important;
+}
+
+.table-wrap thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border: 0 !important;
+  background: #fff !important;
+  color: #758096 !important;
+  font-size: 9px !important;
+  letter-spacing: .075em !important;
+  padding: 9px 12px !important;
+  white-space: nowrap;
+}
+
+.table-wrap th abbr {
+  border: 0 !important;
+  text-decoration: none !important;
+}
+
+.table-wrap tbody tr {
+  background: transparent !important;
+}
+
+.table-wrap tbody td {
+  border-top: 1px solid #e9edf1 !important;
+  border-bottom: 1px solid #e9edf1 !important;
+  background: #fafbfd;
+  padding: 10px 12px !important;
+  vertical-align: middle;
+  transition: background .16s ease, border-color .16s ease, transform .16s ease;
+}
+
+.table-wrap tbody td:first-child {
+  border-left: 1px solid #e9edf1 !important;
+  border-radius: 11px 0 0 11px;
+}
+
+.table-wrap tbody td:last-child {
+  border-right: 1px solid #e9edf1 !important;
+  border-radius: 0 11px 11px 0;
+}
+
+.table-wrap tbody tr:hover td {
+  border-color: #d4e7e1 !important;
+  background: #f0f7f5 !important;
+}
+
+.medication-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.medication-name > i {
+  display: grid;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 8px;
+  background: #eaf5f1;
+  color: #218c72;
+}
+
+.medication-name > span {
+  color: #26344e;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.count-cell {
+  display: inline-flex;
+  min-width: 34px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #eef2f7;
+  color: #28364f;
+  font-weight: 750;
+}
+
+.percent-metric {
+  display: grid;
+  min-width: 82px;
+  gap: 6px;
+}
+
+.percent-metric strong {
+  color: #29364d;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.percent-metric > span {
+  display: block;
+  width: 72px;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #e8edf1;
+}
+
+.percent-metric > span i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #4aa886;
+}
+
+.percent-metric.moderate > span i { background: #d9aa46; }
+.percent-metric.high > span i { background: #e48749; }
+.percent-metric.very-high > span i { background: #d95b67; }
+.percent-metric.cost > span i { background: #7467dc; }
+.percent-metric.restriction > span i { background: #3a95c7; }
+.percent-metric.score > span i { background: #218c72; }
+
+.exposure-pill {
+  display: inline-grid;
+  min-width: 47px;
+  height: 27px;
+  place-items: center;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.exposure-pill.active {
+  background: #e7f2fc;
+  color: #2e6ea6;
+}
+
+.exposure-pill.is-zero {
+  min-width: 32px;
+  background: #f0f3f6;
+  color: #98a2b1;
+}
+
+.prescriber-scroll {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding-right: 7px !important;
+  scrollbar-color: #548c7f transparent;
+  scrollbar-width: thin;
+}
+
+.prescriber-scroll button {
+  position: relative;
+  z-index: 0;
+  flex: none;
+  margin: 0 !important;
+  border: 1px solid transparent !important;
+  transform: none !important;
+  transition: background .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+}
+
+.prescriber-scroll button:hover {
+  z-index: 1;
+  border-color: #dce9e5 !important;
+  box-shadow: 0 5px 14px #26483f10;
+}
+
+.prescriber-scroll button.active {
+  border-color: #d7e8e2 !important;
+  box-shadow: inset 3px 0 #2a9b7c;
+}
+
+.prescriber-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.prescriber-scroll::-webkit-scrollbar-track {
+  margin: 8px 0;
+  border-radius: 99px;
+  background: transparent;
+}
+
+.prescriber-scroll::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 99px;
+  background: linear-gradient(#6cac9e, #397c6d);
+  background-clip: padding-box;
+}
+
+.prescriber-scroll::-webkit-scrollbar-thumb:hover {
+  background: #2f7565;
+  background-clip: padding-box;
+}
+
+.prescriber-scroll::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.table-wrap::-webkit-scrollbar {
+  height: 7px;
+}
+
+.table-wrap::-webkit-scrollbar-track {
+  border-radius: 99px;
+  background: transparent;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: #9bbab2;
+}
+
+@media (max-width: 760px) {
+  .table-panel { padding-inline: 4px; }
+  .table-wrap { padding-inline: 3px !important; }
+  .table-wrap tbody td { padding: 9px 10px !important; }
+  .medication-name > i { display: none; }
+}
