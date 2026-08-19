@@ -1,17 +1,17 @@
 # Pharmacy Formulary Optimization and Adherence Assistant
 
-A proof-of-concept analytics application that combines public CMS-derived plan and formulary attributes with synthetic member, medication, utilization, adherence, prescriber, and prediction data. A FastAPI service exposes chart-ready analytics to a React dashboards.
+A proof-of-concept analytics application that combines public CMS-derived plan and formulary attributes with synthetic member, medication, utilization, adherence, prescriber, and prediction data. A FastAPI service exposes chart-ready analytics to a React dashboards
 
 > [!IMPORTANT]
 > This repository is a synthetic proof of concept. It does not contain real patient or prescriber records and must not be used for clinical decisions, medication-substitution guidance, causal conclusions, measured plan performance, or formulary recommendations.
 
 ## What the prototype demonstrates
 
-- Plan-level formulary and adherence-risk analytics
-- Versioned batch scoring through a fixed 12-feature contract
-- Explainable synthetic prescriber review signals
-- Plan, tier, restriction, pharmacy, cost-burden, and medication views
-- A FastAPI backend, MySQL persistence layer, and React/Vite dashboard
+- Plan-level formulary and adherence-risk analytics.
+- Versioned batch scoring through a fixed 12-feature contract.
+- Explainable synthetic prescriber review signals.
+- Plan, tier, restriction, pharmacy, cost-burden, and medication views.
+- A FastAPI backend, MySQL persistence layer, and React/Vite dashboard.
 
 The prescriber-analysis branch is separate from the adherence model: prescriber data is not an ML feature and does not retrain or alter the model.
 
