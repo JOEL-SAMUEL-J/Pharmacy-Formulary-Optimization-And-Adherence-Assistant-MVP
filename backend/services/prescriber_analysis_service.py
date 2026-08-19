@@ -7,7 +7,7 @@ from backend.core.exceptions import NotFoundError
 from backend.repositories.prescriber_repository import PrescriberRepository
 
 
-PRESCRIBER_REVIEW_LABEL = "Potential Formulary Review Opportunity - Synthetic POC"
+PRESCRIBER_REVIEW_LABEL = "Medication requires formulary review"
 
 
 def _number(value, default=0.0) -> float:
