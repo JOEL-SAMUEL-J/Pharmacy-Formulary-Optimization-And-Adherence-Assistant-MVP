@@ -212,7 +212,7 @@ Use `.env.example` as the canonical safe template. Store deployed secrets in you
 
 
 
-## License
+###License
 
-No license has been selected. Add a `LICENSE` file before making the repository public or accepting external contributions. Until then, copyright remains with the repository owner and no reuse rights are granted by default.
+No License has been selected. Add a `LICENSE` file before making the repository public or accepting external contributions. Until then, copyright remains with the repository owner and no reuse rights are granted by default.
 
