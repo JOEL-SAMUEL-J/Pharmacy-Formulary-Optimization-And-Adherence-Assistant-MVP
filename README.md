@@ -88,7 +88,8 @@ python -m pip install -r backend/requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` with your local MySQL credentials. Never commit `.env`.
+Edit `.env` with your local MySQL credentials.
+Never commit `.env`.
 
 Verify the database and model:
 
