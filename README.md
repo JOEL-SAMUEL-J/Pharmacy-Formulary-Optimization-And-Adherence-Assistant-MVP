@@ -204,7 +204,7 @@ Use `.env.example` as the canonical safe template. Store deployed secrets in you
 
 ## Known limitations
 
-- Synthetic results do not establish clinical validity or causality.
+- Synthetic results do not establish clinical validity or causality
 - Review thresholds are demonstration settings, not clinical standards.
 - Synthetic specialties are descriptive and are not clinically matched to drugs.
 - There is no governed therapeutic-equivalence mapping, so the application does not recommend substitute medications.
