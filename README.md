@@ -1,6 +1,6 @@
 # Pharmacy Formulary Optimization and Adherence Assistant
 
-A proof-of-concept analytics application that combines public CMS-derived plan and formulary attributes with synthetic member, medication, utilization, adherence, prescriber, and prediction data. A FastAPI service exposes chart-ready analytics to a React dashboards
+A proof-of-concept analytics application that combines public CMS-derived plan and formulary attributes with synthetic member, medication, utilization, adherence, prescriber, and prediction data. A FastAPI service exposes chart-ready analytics to a React dashboard.
 
 > [!IMPORTANT]
 > This repository is a synthetic proof of concept. It does not contain real patient or prescriber records and must not be used for clinical decisions, medication-substitution guidance, causal conclusions, measured plan performance, or formulary recommendations.
